@@ -38,6 +38,21 @@ You can then run the program using
 ./skin_embedded_c_prog_example
 ```
 
+If ./configure complains about the wrong libtool version
+```
+libtool: Version mismatch error.  This is libtool 2.4.7, but the
+libtool: definition of this LT_INIT comes from libtool 2.4.6.
+libtool: You should recreate aclocal.m4 with macros from libtool 2.4.7
+libtool: and run autoconf again.
+```
+
+run 
+
+```
+autoreconf --force --install
+```
+
+
 ### Include this c program to a yocto project using the eSDK
 
 To do this part, you will have to [install the eSDK](https://github.com/kevin-allen/phyBOARD/blob/main/yocto_eSDK.md) for your target image on your computer.
