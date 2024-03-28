@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-  printf("Hello from the skin project world...\n");
+  printf("Hello from the skin project on yocto...\n");
 
   LibHelloWorld();
 
