@@ -1,4 +1,5 @@
 skin_embedded_c_prog_example
+
 ==========
 
 Example of c application that can be compiled with autotool. The example contain a shared library.
