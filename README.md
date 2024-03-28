@@ -63,7 +63,7 @@ For development, you might want to add the source from the directory where you a
 devtool add ~/repo/skin_embedded_c_prog_example
 ```
 
-Otherwise, you can get the latest version via the GitHub repository.
+Otherwise, you can get the latest version via the GitHub repository. This is less practical if you want to test changes you made locally.
 
 ```
 devtool add https://github.com/kevin-allen/skin_embedded_c_prog_example.git
