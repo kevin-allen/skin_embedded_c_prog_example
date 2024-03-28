@@ -1,11 +1,11 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-#AC_PREREQ(2.60)
-AC_INIT(bbexample, 0.1, ajlennon@dynamicdevices.co.uk)
-AC_CONFIG_SRCDIR([bbexample.c])
-AC_CONFIG_HEADER([config.h])
-AM_INIT_AUTOMAKE(bbexample, main)
+#AC_PREREQ([2.71])
+AC_INIT([skin_embedded_c_prog_example],[0.1],[k.allen@dkfz-heidelberg.de])
+AC_CONFIG_SRCDIR([skingc.c])
+AC_CONFIG_HEADERS([config.h])
+AM_INIT_AUTOMAKE(skin_embedded_c_prog_example, main)
 
 # Checks for programs.
 AC_PROG_CC

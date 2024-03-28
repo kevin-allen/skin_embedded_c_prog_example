@@ -6,6 +6,14 @@ Example of c application that can be compiled with autotool. The example contain
 This repository can be used as a source repository for a Yocto/OpenEmbedded recipe.
 
 
+To compile on your host computer, install libtool.
+
+```
+sudo apt-get install libtool
+```
+
+
+
 ```
 cd ~/ampliphy-vendor-xwayland_sdk
 . environment-setup-cortexa53-crypto-phytec-linux
