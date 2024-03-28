@@ -74,6 +74,9 @@ A recipe will be added in this file
 ```
 ampliphy-vendor-xwayland_sdk/workspace/recipes/skin-embedded-c-prog-example/skin-embedded-c-prog-example_git.bb`
 ```
+
+Notice that the recipe will have the source set to the GitHub repository by default. This means that someone using our recipe would get the code from there.
+
  
 You can remove the recipe from the workspace layer using
 
