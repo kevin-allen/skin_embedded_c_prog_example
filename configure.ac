@@ -3,7 +3,7 @@
 
 #AC_PREREQ([2.71])
 AC_INIT([skin_embedded_c_prog_example],[0.1],[k.allen@dkfz-heidelberg.de])
-AC_CONFIG_SRCDIR([skingc.c])
+AC_CONFIG_SRCDIR([skinc.c])
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE(skin_embedded_c_prog_example, main)
 

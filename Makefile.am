@@ -1,13 +1,13 @@
 AUTOMAKE_OPTIONS = foreign
 
 CFLAGS = -Wall -pedantic
-include_HEADERS = bbexample.h
+include_HEADERS = skinc.h
 
-lib_LTLIBRARIES = libbbexample.la
-libbbexample_la_SOURCES  = bbexamplelib.c
-libbbexample_la_LDFLAGS= -version-info 1:0:0
+lib_LTLIBRARIES = libskinc.la
+libskinc_la_SOURCES  = skinclib.c
+libskinc_la_LDFLAGS= -version-info 1:0:0
 
-bin_PROGRAMS = bbexample
-bbexample_SOURCES = bbexample.c
-bbexample_LDADD = .libs/libbbexample.la
-bbexample_DEPENDENCIES = libbbexample.la
+bin_PROGRAMS = skin_embedded_c_prog_example
+skin_embedded_c_prog_example_SOURCES = skinc.c
+skin_embedded_c_prog_example_LDADD = .libs/libskinc.la
+skin_embedded_c_prog_example_DEPENDENCIES = libskinc.la

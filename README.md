@@ -6,11 +6,26 @@ Example of c application that can be compiled with autotool. The example contain
 This repository can be used as a source repository for a Yocto/OpenEmbedded recipe.
 
 
-To compile on your host computer, install libtool.
+### Compile on host computer using the host compiler.
+
+Use a terminal in which you have not set variables for cross-compiling (see yocto eSDK documentation).
+
+
+Install libtool.
 
 ```
 sudo apt-get install libtool
 ```
+
+run
+
+```
+autoreconf
+./configure 
+make
+sudo make install
+```
+
 
 
 
