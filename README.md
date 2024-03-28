@@ -27,12 +27,25 @@ sudo make install
 ```
 
 
+### Include this c program to a yocto project using the eSDK
 
+With a new terminal, set the environment to work with the eSDK.
 
 ```
 cd ~/ampliphy-vendor-xwayland_sdk
 . environment-setup-cortexa53-crypto-phytec-linux
+```
+
+Add a recipe to the eSDK image and build from source
+
+```
 devtool add https://github.com/kevin-allen/skin_embedded_c_prog_example.git
 #devtool edit-recipe skin-embedded-c-prog-example
 devtool build skin-embedded-c-prog-example
+```
+
+Test the application on the device
+
+```
 devtool deploy-target skin_embedded_c_prog_bb_example root@192.168.0.2
+```
