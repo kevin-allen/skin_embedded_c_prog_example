@@ -33,6 +33,6 @@ sudo make install
 cd ~/ampliphy-vendor-xwayland_sdk
 . environment-setup-cortexa53-crypto-phytec-linux
 devtool add https://github.com/kevin-allen/skin_embedded_c_prog_example.git
-#devtool edit-recipe skin_embedded_c_prog_bb_example
-devtool build skin_embedded_c_prog_bb_example
+#devtool edit-recipe skin-embedded-c-prog-example
+devtool build skin-embedded-c-prog-example
 devtool deploy-target skin_embedded_c_prog_bb_example root@192.168.0.2
