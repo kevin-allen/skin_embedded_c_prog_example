@@ -16,5 +16,5 @@
 
 void LibHelloWorld()
 {
-  printf("Hello World (from the skin c shared library!)\n");
+  printf("Hello World (from the skin c shared library! new version)\n");
 }
