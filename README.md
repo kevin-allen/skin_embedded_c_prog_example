@@ -59,7 +59,7 @@ Add a recipe to the eSDK image and build from the source.
 
 ```
 devtool add https://github.com/kevin-allen/skin_embedded_c_prog_example.git
-#devtool edit-recipe skin-embedded-c-prog-example
+#devtool edit-recipe skinembedded-c-prog-example
 devtool build skin-embedded-c-prog-example
 ```
 
