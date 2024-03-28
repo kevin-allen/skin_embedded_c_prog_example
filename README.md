@@ -57,33 +57,42 @@ cd ~/ampliphy-vendor-xwayland_sdk
 
 Add a recipe to the eSDK image and build from the source.
 
+For development, you might want to add the source from the directory where you are doing the development.
+
+```
+devtool add ~/repo/skin_embedded_c_prog_example
+```
+
+Otherwise, you can get the latest version via the GitHub repository.
+
 ```
 devtool add https://github.com/kevin-allen/skin_embedded_c_prog_example.git
 ```
 
-If you use the --autorev flag, it will look for new versions when you build the recipe.
-
-
-
-This will add a recipe to the workspace layer. It should be in this location
+A recipe will be added in this file 
 
 ```
-ampliphy-vendor-xwayland_sdk/workspace/recipes/skin-embedded-c-prog-example/
+ampliphy-vendor-xwayland_sdk/workspace/recipes/skin-embedded-c-prog-example/skin-embedded-c-prog-example_git.bb`
 ```
-
-The recipe will be called `skin-embedded-c-prog-example_git.bb`. 
-
+ 
 You can remove the recipe from the workspace layer using
 
 ```
 devtool reset skin-embedded-c-prog-example
 ```
-You may have to remove the code from `workspace/source/skin-embedded-c-prog-example_git`
 
 
 
+#### Build the recipe
 
+If you are building from a local source directory in which you did local compilation for the host/desktop computer, clean the source tree from automake outputs. 
 
+```
+cd ~/repo/skin_embedded_c_prog_example
+make distclean
+```
+
+Then use devtool to do the cross-compilation of the program from the recipe.
 ```
 devtool build skin-embedded-c-prog-example
 ```
