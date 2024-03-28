@@ -40,14 +40,22 @@ You can then run the program using
 
 ### Include this c program to a yocto project using the eSDK
 
-With a new terminal, set the environment to work with the eSDK.
+To do this part, you will have to [install the eSDK](https://github.com/kevin-allen/phyBOARD/blob/main/yocto_eSDK.md) for your target image on your computer.
+
+Here is some information on how I did this: https://github.com/kevin-allen/phyBOARD/blob/main/phytec_distribution.md
+
+#### Set your environment
+
+With a new terminal, the environment must be set to work with the eSDK. Do the following.
 
 ```
 cd ~/ampliphy-vendor-xwayland_sdk
 . environment-setup-cortexa53-crypto-phytec-linux
 ```
 
-Add a recipe to the eSDK image and build from source
+#### Adding a recipe to your image
+
+Add a recipe to the eSDK image and build from the source.
 
 ```
 devtool add https://github.com/kevin-allen/skin_embedded_c_prog_example.git
@@ -55,8 +63,14 @@ devtool add https://github.com/kevin-allen/skin_embedded_c_prog_example.git
 devtool build skin-embedded-c-prog-example
 ```
 
-Test the application on the device
+#### Test the application on the device
+
+You will first need to put the image on the device and set up the network connection between your computer and the device.
+
 
 ```
 devtool deploy-target skin_embedded_c_prog_bb_example root@192.168.0.2
 ```
+
+You can then run the command on the target device.
+
